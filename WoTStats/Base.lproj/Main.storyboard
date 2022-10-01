@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jHw-9l-Bls">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WoTStats" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mainbackground" translatesAutoresizingMaskIntoConstraints="NO" id="32C-4F-DMS">
+                                <rect key="frame" x="0.0" y="-21" width="422" height="917"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Xp-OT-I0t">
+                                <rect key="frame" x="25" y="825" width="96" height="37"/>
+                                <color key="backgroundColor" name="ButtonBgT"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Website">
+                                            <attributes>
+                                                <font key="NSFont" size="20" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" name="YaziRenk2"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6qL-KR-H0O">
+                                <rect key="frame" x="316" y="825" width="73" height="37"/>
+                                <color key="backgroundColor" name="ButtonBgT"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Login">
+                                            <attributes>
+                                                <font key="NSFont" size="20" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" name="YaziRenk2"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="Uun-jZ-IWj">
+                                <rect key="frame" x="48.5" y="529" width="317" height="34"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zad-iE-SS6">
+                                        <rect key="frame" x="0.0" y="0.0" width="131" height="34"/>
+                                        <color key="backgroundColor" name="ButtonBgT"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Search Player">
+                                                    <attributes>
+                                                        <font key="NSFont" size="17" name="Helvetica"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="baseForegroundColor" name="YaziRenk2"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="butttonSearchP:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xfg-ao-Jkw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGI-uk-rMJ">
+                                        <rect key="frame" x="186" y="0.0" width="131" height="34"/>
+                                        <color key="backgroundColor" name="ButtonBgT"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Search Clan">
+                                                    <attributes>
+                                                        <font key="NSFont" size="17" name="Helvetica"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="baseForegroundColor" name="YaziRenk2"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonSearchC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wqs-Ck-DGs"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="P59-7q-gDu">
+                                <rect key="frame" x="48" y="609" width="138" height="123"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top 3 Player" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcP-TE-apW">
+                                        <rect key="frame" x="0.0" y="0.0" width="138" height="25.5"/>
+                                        <color key="backgroundColor" name="ButtonBgT"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <color key="textColor" name="YaziRenk2"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 - FirstPlayer" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C7s-4z-OAZ">
+                                        <rect key="frame" x="0.0" y="36.5" width="138" height="21.5"/>
+                                        <color key="backgroundColor" name="ButtonBgT"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" name="YaziRenk2"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 - SecondPlayer" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YhO-cy-HFI">
+                                        <rect key="frame" x="0.0" y="69" width="138" height="21.5"/>
+                                        <color key="backgroundColor" name="ButtonBgT"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" name="YaziRenk2"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 - ThirdPlayer" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Unz-cK-r3u">
+                                        <rect key="frame" x="0.0" y="101.5" width="138" height="21.5"/>
+                                        <color key="backgroundColor" name="ButtonBgT"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" name="YaziRenk2"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="FCj-sY-MDD">
+                                <rect key="frame" x="237.5" y="609" width="125" height="123"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top 3 Clan" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BMj-dK-fVY">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="25.5"/>
+                                        <color key="backgroundColor" name="ButtonBgT"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <color key="textColor" name="YaziRenk2"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 - FirstClan" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dSZ-0l-7tZ">
+                                        <rect key="frame" x="0.0" y="36.5" width="125" height="21.5"/>
+                                        <color key="backgroundColor" name="ButtonBgT"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" name="YaziRenk2"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 - SecondClan" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J16-eK-kec">
+                                        <rect key="frame" x="0.0" y="69" width="125" height="21.5"/>
+                                        <color key="backgroundColor" name="ButtonBgT"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" name="YaziRenk2"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 - ThirdClan" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="koU-fT-egO">
+                                        <rect key="frame" x="0.0" y="101.5" width="125" height="21.5"/>
+                                        <color key="backgroundColor" name="ButtonBgT"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" name="YaziRenk2"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9au-hi-zau">
+                                <rect key="frame" x="57" y="424" width="300" height="55"/>
+                                <color key="backgroundColor" name="ButtonBgT"/>
+                                <color key="tintColor" name="YaziRenk2"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Ta7-JL-6EJ"/>
+                                    <constraint firstAttribute="height" constant="55" id="cxy-7y-7Vi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="24"/>
+                                <color key="textColor" name="YaziRenk2"/>
+                                <color key="highlightedColor" name="ButtonBgT"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3Xp-OT-I0t" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="1e8-gX-f9D"/>
+                            <constraint firstItem="9au-hi-zau" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1el-eo-BrG"/>
+                            <constraint firstItem="P59-7q-gDu" firstAttribute="top" secondItem="Uun-jZ-IWj" secondAttribute="bottom" constant="46" id="Mmu-dF-YMH"/>
+                            <constraint firstItem="FCj-sY-MDD" firstAttribute="centerX" secondItem="EGI-uk-rMJ" secondAttribute="centerX" id="NLg-NP-KE2"/>
+                            <constraint firstItem="Uun-jZ-IWj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T3Q-Dy-dMj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="32C-4F-DMS" secondAttribute="bottom" constant="-34" id="Udc-77-ps2"/>
+                            <constraint firstItem="32C-4F-DMS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-109" id="WgH-46-bwd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6qL-KR-H0O" secondAttribute="trailing" constant="25" id="beo-5B-yl0"/>
+                            <constraint firstItem="32C-4F-DMS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hVI-xu-mEI"/>
+                            <constraint firstItem="Uun-jZ-IWj" firstAttribute="top" secondItem="9au-hi-zau" secondAttribute="bottom" constant="50" id="nNC-X8-SXv"/>
+                            <constraint firstItem="P59-7q-gDu" firstAttribute="centerX" secondItem="Zad-iE-SS6" secondAttribute="centerX" constant="3" id="pKm-3x-Wvh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="32C-4F-DMS" secondAttribute="trailing" constant="-8" id="pYK-ab-Es1"/>
+                            <constraint firstItem="Uun-jZ-IWj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="529" id="qqC-jc-eUa"/>
+                            <constraint firstItem="3Xp-OT-I0t" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="rvW-2C-IAD"/>
+                            <constraint firstItem="FCj-sY-MDD" firstAttribute="top" secondItem="P59-7q-gDu" secondAttribute="top" id="tno-hV-Vl2"/>
+                            <constraint firstItem="6qL-KR-H0O" firstAttribute="centerY" secondItem="3Xp-OT-I0t" secondAttribute="centerY" id="uLJ-ly-QsG"/>
+                            <constraint firstItem="FCj-sY-MDD" firstAttribute="centerY" secondItem="P59-7q-gDu" secondAttribute="centerY" id="xud-w5-Epz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Gw3-i6-Syc"/>
+                    <connections>
+                        <outlet property="TopCStack" destination="FCj-sY-MDD" id="BaO-d3-APV"/>
+                        <outlet property="TopPStack" destination="P59-7q-gDu" id="UUM-3T-7jR"/>
+                        <outlet property="buttonLogin" destination="6qL-KR-H0O" id="gH2-D9-O2l"/>
+                        <outlet property="buttonWebsite" destination="3Xp-OT-I0t" id="uxQ-W4-3mB"/>
+                        <outlet property="labelNick" destination="9au-hi-zau" id="NDG-Ut-LhC"/>
+                        <outlet property="topCSearch" destination="EGI-uk-rMJ" id="JOZ-FQ-Ueu"/>
+                        <outlet property="topPSearch" destination="Zad-iE-SS6" id="PLb-bK-f5C"/>
+                        <segue destination="z2f-SI-Xh3" kind="show" identifier="toPlayerScreen" id="vbF-2e-oyg"/>
+                        <segue destination="pUc-5l-aoy" kind="show" identifier="toClanScreen" id="Kfa-11-BBF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="97.767857142857139"/>
+        </scene>
+        <!--ClanVC-->
+        <scene sceneID="mNl-9h-hox">
+            <objects>
+                <viewController id="pUc-5l-aoy" customClass="ClanVC" customModule="WoTStats" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NOg-U5-EDb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clanScreen" translatesAutoresizingMaskIntoConstraints="NO" id="Kjj-B4-tgz">
+                                <rect key="frame" x="0.0" y="-13" width="414" height="909"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="909" id="1wH-Ay-VXr"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yiW-uD-f6h">
+                                <rect key="frame" x="135" y="411" width="144" height="36"/>
+                                <color key="backgroundColor" name="ButtonBgT"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Search Clan">
+                                            <attributes>
+                                                <font key="NSFont" size="19" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" name="YaziRenk2"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonSearcClan:" destination="pUc-5l-aoy" eventType="touchUpInside" id="wKU-Kp-uOt"/>
+                                    <action selector="butttonSearchP:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GbM-4k-1D1"/>
+                                    <action selector="playerSearch:" destination="z2f-SI-Xh3" eventType="touchUpInside" id="hc1-jd-OyH"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type Clan Name To Search" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R6h-NT-sfj">
+                                <rect key="frame" x="30" y="299" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQ3-up-YzJ">
+                                <rect key="frame" x="40" y="215" width="334" height="55"/>
+                                <color key="backgroundColor" name="ButtonBgT"/>
+                                <color key="tintColor" name="YaziRenk2"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="Gyr-iw-98R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="24"/>
+                                <color key="textColor" name="YaziRenk2"/>
+                                <color key="highlightedColor" name="ButtonBgT"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="2IV-ZB-h4h">
+                                <rect key="frame" x="144.5" y="557" width="125" height="123"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top 3 Clan" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAw-43-96M">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="25.5"/>
+                                        <color key="backgroundColor" name="ButtonBgT"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <color key="textColor" name="YaziRenk2"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 - FirstClan" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7A-nx-HTl">
+                                        <rect key="frame" x="0.0" y="36.5" width="125" height="21.5"/>
+                                        <color key="backgroundColor" name="ButtonBgT"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" name="YaziRenk2"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 - SecondClan" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFs-nq-cGJ">
+                                        <rect key="frame" x="0.0" y="69" width="125" height="21.5"/>
+                                        <color key="backgroundColor" name="ButtonBgT"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" name="YaziRenk2"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 - ThirdClan" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hv8-lg-0CB">
+                                        <rect key="frame" x="0.0" y="101.5" width="125" height="21.5"/>
+                                        <color key="backgroundColor" name="ButtonBgT"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" name="YaziRenk2"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZEy-mo-VUv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZEy-mo-VUv" firstAttribute="bottom" secondItem="2IV-ZB-h4h" secondAttribute="bottom" constant="182" id="0LN-pj-5P2"/>
+                            <constraint firstItem="2IV-ZB-h4h" firstAttribute="centerX" secondItem="Kjj-B4-tgz" secondAttribute="centerX" id="DY9-dk-2PT"/>
+                            <constraint firstItem="BQ3-up-YzJ" firstAttribute="centerX" secondItem="NOg-U5-EDb" secondAttribute="centerX" id="Eis-vw-Aq5"/>
+                            <constraint firstItem="R6h-NT-sfj" firstAttribute="top" secondItem="BQ3-up-YzJ" secondAttribute="bottom" constant="29" id="Ffs-bO-yGg"/>
+                            <constraint firstItem="ZEy-mo-VUv" firstAttribute="trailing" secondItem="BQ3-up-YzJ" secondAttribute="trailing" constant="40" id="Hw0-ML-sOf"/>
+                            <constraint firstItem="BQ3-up-YzJ" firstAttribute="top" secondItem="ZEy-mo-VUv" secondAttribute="top" constant="127" id="axI-V7-t5C"/>
+                            <constraint firstAttribute="bottom" secondItem="Kjj-B4-tgz" secondAttribute="bottom" id="bO5-3v-iwE"/>
+                            <constraint firstItem="ZEy-mo-VUv" firstAttribute="trailing" secondItem="R6h-NT-sfj" secondAttribute="trailing" constant="30" id="egy-S2-ckQ"/>
+                            <constraint firstItem="ZEy-mo-VUv" firstAttribute="trailing" secondItem="yiW-uD-f6h" secondAttribute="trailing" constant="135" id="gNO-wa-KOb"/>
+                            <constraint firstItem="yiW-uD-f6h" firstAttribute="top" secondItem="R6h-NT-sfj" secondAttribute="bottom" constant="78" id="pAT-ua-IEN"/>
+                            <constraint firstItem="R6h-NT-sfj" firstAttribute="leading" secondItem="ZEy-mo-VUv" secondAttribute="leading" constant="30" id="qeN-wv-rb2"/>
+                            <constraint firstItem="yiW-uD-f6h" firstAttribute="leading" secondItem="ZEy-mo-VUv" secondAttribute="leading" constant="135" id="thC-II-yCk"/>
+                            <constraint firstItem="Kjj-B4-tgz" firstAttribute="leading" secondItem="NOg-U5-EDb" secondAttribute="leading" id="toj-Fr-H80"/>
+                            <constraint firstItem="2IV-ZB-h4h" firstAttribute="centerX" secondItem="NOg-U5-EDb" secondAttribute="centerX" id="uiA-hq-0SF"/>
+                            <constraint firstItem="BQ3-up-YzJ" firstAttribute="leading" secondItem="ZEy-mo-VUv" secondAttribute="leading" constant="40" id="vvn-Kh-Hwn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jXs-Db-8g0"/>
+                    <connections>
+                        <outlet property="TopCStack" destination="2IV-ZB-h4h" id="9XJ-IX-eEs"/>
+                        <outlet property="buttonClanSearch" destination="yiW-uD-f6h" id="XsW-Hi-nAK"/>
+                        <outlet property="labelClan" destination="BQ3-up-YzJ" id="VAu-gV-3GU"/>
+                        <outlet property="textFieldClan" destination="R6h-NT-sfj" id="VfQ-rO-cOL"/>
+                        <segue destination="Ftf-vC-aLq" kind="show" identifier="toOzetScreen" id="zDr-F9-E8g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0VP-aY-g6R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1700.0000000000002" y="463.39285714285711"/>
+        </scene>
+        <!--OzetVC-->
+        <scene sceneID="j2d-tm-4Gh">
+            <objects>
+                <viewController id="Ftf-vC-aLq" customClass="OzetVC" customModule="WoTStats" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gzf-fh-qNy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OZETVC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBH-pL-JU8">
+                                <rect key="frame" x="124" y="395" width="155" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ozetScreen" translatesAutoresizingMaskIntoConstraints="NO" id="CqP-zg-c9x">
+                                <rect key="frame" x="0.0" y="-14" width="414" height="910"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nickname" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wq0-m3-ex5">
+                                <rect key="frame" x="20" y="132" width="374" height="45"/>
+                                <color key="backgroundColor" name="ButtonBgT"/>
+                                <color key="tintColor" name="YaziRenk2"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="4bU-a2-dSA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="24"/>
+                                <color key="textColor" name="YaziRenk2"/>
+                                <color key="highlightedColor" name="ButtonBgT"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dur-EJ-qWU">
+                                <rect key="frame" x="20" y="781" width="148" height="36"/>
+                                <color key="backgroundColor" name="ButtonBgT"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Previous Page">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="19"/>
+                                    <color key="baseForegroundColor" name="YaziRenk2"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="anaEkranaDonus:" destination="Ftf-vC-aLq" eventType="touchUpInside" id="xb3-cr-EPK"/>
+                                    <action selector="buttonSearcClan:" destination="pUc-5l-aoy" eventType="touchUpInside" id="1Im-pJ-62J"/>
+                                    <action selector="butttonSearchP:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Txg-Yv-Nay"/>
+                                    <action selector="playerSearch:" destination="z2f-SI-Xh3" eventType="touchUpInside" id="nHY-nu-UCt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Njd-Vc-QGh">
+                                <rect key="frame" x="221" y="781" width="173" height="36"/>
+                                <color key="backgroundColor" name="ButtonBgT"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="All The Way Back">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="19"/>
+                                    <color key="baseForegroundColor" name="YaziRenk2"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="anaEkranaDonus:" destination="Ftf-vC-aLq" eventType="touchUpInside" id="7bl-Sc-i0K"/>
+                                    <action selector="buttonEnBasa:" destination="Ftf-vC-aLq" eventType="touchUpInside" id="cg9-oJ-ach"/>
+                                    <action selector="buttonSearcClan:" destination="pUc-5l-aoy" eventType="touchUpInside" id="PG4-X2-U99"/>
+                                    <action selector="butttonSearchP:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UMB-6R-YAw"/>
+                                    <action selector="playerSearch:" destination="z2f-SI-Xh3" eventType="touchUpInside" id="HeV-Uq-jLh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1fP-6f-7A8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Wq0-m3-ex5" firstAttribute="top" secondItem="1fP-6f-7A8" secondAttribute="top" constant="44" id="02C-Uh-ZKd"/>
+                            <constraint firstItem="Wq0-m3-ex5" firstAttribute="leading" secondItem="Gzf-fh-qNy" secondAttribute="leadingMargin" id="CcL-Fw-9pV"/>
+                            <constraint firstItem="CqP-zg-c9x" firstAttribute="top" secondItem="1fP-6f-7A8" secondAttribute="top" constant="-102" id="FZb-nM-6wV"/>
+                            <constraint firstItem="dur-EJ-qWU" firstAttribute="leading" secondItem="Wq0-m3-ex5" secondAttribute="leading" id="acc-6X-CSf"/>
+                            <constraint firstItem="1fP-6f-7A8" firstAttribute="bottom" secondItem="Njd-Vc-QGh" secondAttribute="bottom" constant="45" id="bGK-rn-gNl"/>
+                            <constraint firstItem="Wq0-m3-ex5" firstAttribute="centerX" secondItem="CqP-zg-c9x" secondAttribute="centerX" id="f6b-Qd-ZJq"/>
+                            <constraint firstItem="CqP-zg-c9x" firstAttribute="leading" secondItem="Gzf-fh-qNy" secondAttribute="leading" id="gPt-Lc-94A"/>
+                            <constraint firstItem="Njd-Vc-QGh" firstAttribute="centerY" secondItem="dur-EJ-qWU" secondAttribute="centerY" id="j9F-dH-Dms"/>
+                            <constraint firstAttribute="bottom" secondItem="CqP-zg-c9x" secondAttribute="bottom" id="lJF-Sv-A96"/>
+                            <constraint firstItem="Njd-Vc-QGh" firstAttribute="leading" secondItem="dur-EJ-qWU" secondAttribute="trailing" constant="53" id="s5H-EU-3Cy"/>
+                            <constraint firstAttribute="trailing" secondItem="CqP-zg-c9x" secondAttribute="trailing" id="t8P-od-yYI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZIG-no-7qr"/>
+                    <connections>
+                        <outlet property="nickClan" destination="Wq0-m3-ex5" id="m67-yr-Yli"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lpB-CT-AeJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2640.579710144928" y="462.72321428571428"/>
+        </scene>
+        <!--PlayerVC-->
+        <scene sceneID="Q7Q-wt-gEq">
+            <objects>
+                <viewController id="z2f-SI-Xh3" customClass="PlayerVC" customModule="WoTStats" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TpC-3O-hJP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="playerScreen" translatesAutoresizingMaskIntoConstraints="NO" id="aLk-DP-g1h">
+                                <rect key="frame" x="0.0" y="-12" width="414" height="908"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type Nickname To Search" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="alq-kf-QEq">
+                                <rect key="frame" x="30" y="257" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMN-k8-HSv">
+                                <rect key="frame" x="57" y="175" width="300" height="55"/>
+                                <color key="backgroundColor" name="ButtonBgT"/>
+                                <color key="tintColor" name="YaziRenk2"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="6kk-NO-pTI"/>
+                                    <constraint firstAttribute="width" constant="300" id="Vv7-c1-y3W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="24"/>
+                                <color key="textColor" name="YaziRenk2"/>
+                                <color key="highlightedColor" name="ButtonBgT"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kor-X4-lyv">
+                                <rect key="frame" x="135.5" y="365" width="143.5" height="36"/>
+                                <color key="backgroundColor" name="ButtonBgT"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Search Player">
+                                            <attributes>
+                                                <font key="NSFont" size="19" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" name="YaziRenk2"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="butttonSearchP:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r67-N1-NLF"/>
+                                    <action selector="playerSearch:" destination="z2f-SI-Xh3" eventType="touchUpInside" id="q4K-KG-HXg"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="EL7-LC-zaA">
+                                <rect key="frame" x="138" y="501" width="138" height="123"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top 3 Player" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zjl-4h-Pau">
+                                        <rect key="frame" x="0.0" y="0.0" width="138" height="25.5"/>
+                                        <color key="backgroundColor" name="ButtonBgT"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <color key="textColor" name="YaziRenk2"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 - FirstPlayer" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmX-uo-u4H">
+                                        <rect key="frame" x="0.0" y="36.5" width="138" height="21.5"/>
+                                        <color key="backgroundColor" name="ButtonBgT"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" name="YaziRenk2"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 - SecondPlayer" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qn2-5s-H0N">
+                                        <rect key="frame" x="0.0" y="69" width="138" height="21.5"/>
+                                        <color key="backgroundColor" name="ButtonBgT"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" name="YaziRenk2"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 - ThirdPlayer" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cik-ww-JDE">
+                                        <rect key="frame" x="0.0" y="101.5" width="138" height="21.5"/>
+                                        <color key="backgroundColor" name="ButtonBgT"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" name="YaziRenk2"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="11"/>
+                                </userDefinedRuntimeAttributes>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="blS-hc-h2U"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="alq-kf-QEq" firstAttribute="top" secondItem="blS-hc-h2U" secondAttribute="top" constant="169" id="2bm-Tv-Ufx"/>
+                            <constraint firstItem="aLk-DP-g1h" firstAttribute="top" secondItem="blS-hc-h2U" secondAttribute="top" constant="-100" id="3KB-jT-NEr"/>
+                            <constraint firstItem="EL7-LC-zaA" firstAttribute="centerX" secondItem="TpC-3O-hJP" secondAttribute="centerX" id="Irg-yx-jP1"/>
+                            <constraint firstItem="nMN-k8-HSv" firstAttribute="top" secondItem="blS-hc-h2U" secondAttribute="top" constant="87" id="JAr-F5-JM0"/>
+                            <constraint firstItem="Kor-X4-lyv" firstAttribute="centerX" secondItem="nMN-k8-HSv" secondAttribute="centerX" id="N7i-B9-6H4"/>
+                            <constraint firstItem="Kor-X4-lyv" firstAttribute="centerX" secondItem="TpC-3O-hJP" secondAttribute="centerX" id="T8u-2Z-OsN"/>
+                            <constraint firstItem="Kor-X4-lyv" firstAttribute="top" secondItem="alq-kf-QEq" secondAttribute="bottom" constant="74" id="XCJ-mu-UpN"/>
+                            <constraint firstItem="blS-hc-h2U" firstAttribute="trailing" secondItem="aLk-DP-g1h" secondAttribute="trailing" id="Y0j-sv-0yx"/>
+                            <constraint firstItem="blS-hc-h2U" firstAttribute="bottom" secondItem="aLk-DP-g1h" secondAttribute="bottom" constant="-34" id="ZQr-jG-FUu"/>
+                            <constraint firstItem="alq-kf-QEq" firstAttribute="centerX" secondItem="TpC-3O-hJP" secondAttribute="centerX" id="aft-Zo-hK6"/>
+                            <constraint firstItem="alq-kf-QEq" firstAttribute="leading" secondItem="blS-hc-h2U" secondAttribute="leading" constant="30" id="bPd-Ns-KXF"/>
+                            <constraint firstItem="nMN-k8-HSv" firstAttribute="centerX" secondItem="alq-kf-QEq" secondAttribute="centerX" id="ejV-zg-fDQ"/>
+                            <constraint firstItem="blS-hc-h2U" firstAttribute="trailing" secondItem="alq-kf-QEq" secondAttribute="trailing" constant="30" id="g9h-Nf-XGG"/>
+                            <constraint firstItem="aLk-DP-g1h" firstAttribute="leading" secondItem="blS-hc-h2U" secondAttribute="leading" id="j01-LG-odp"/>
+                            <constraint firstItem="Kor-X4-lyv" firstAttribute="centerX" secondItem="alq-kf-QEq" secondAttribute="centerX" id="nnM-pz-3Nw"/>
+                            <constraint firstItem="alq-kf-QEq" firstAttribute="centerX" secondItem="nMN-k8-HSv" secondAttribute="centerX" id="nv2-bt-NEI"/>
+                            <constraint firstItem="EL7-LC-zaA" firstAttribute="top" secondItem="Kor-X4-lyv" secondAttribute="bottom" constant="100" id="y6D-Er-2cf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="swO-NL-5WA"/>
+                    <connections>
+                        <outlet property="buttonPlayer" destination="Kor-X4-lyv" id="26X-GC-m4b"/>
+                        <outlet property="firstP" destination="jmX-uo-u4H" id="Uwh-xV-FYc"/>
+                        <outlet property="labelPlayer" destination="nMN-k8-HSv" id="rCt-xg-bYd"/>
+                        <outlet property="playerSearch" destination="alq-kf-QEq" id="eRd-2W-PNF"/>
+                        <outlet property="secondP" destination="Qn2-5s-H0N" id="RMK-Yq-zLG"/>
+                        <outlet property="stackPlayer" destination="EL7-LC-zaA" id="fNc-qD-VKV"/>
+                        <outlet property="thirdP" destination="Cik-ww-JDE" id="U69-L7-1lc"/>
+                        <outlet property="top3" destination="Zjl-4h-Pau" id="P8O-3k-xNb"/>
+                        <segue destination="Rxx-Tk-8Hw" kind="show" identifier="toRankingScreen" id="nN4-df-Dlo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uEP-4H-W6M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1700.0000000000002" y="-209.59821428571428"/>
+        </scene>
+        <!--RankingVC-->
+        <scene sceneID="SD3-8t-aIM">
+            <objects>
+                <viewController id="Rxx-Tk-8Hw" customClass="RankingVC" customModule="WoTStats" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6BN-3r-Q74">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rankingScreen" translatesAutoresizingMaskIntoConstraints="NO" id="bVn-fD-zff">
+                                <rect key="frame" x="0.0" y="-11" width="414" height="907"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lar-oU-sHg">
+                                <rect key="frame" x="142" y="799" width="131" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ButtonBgT"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="To Summary">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="19"/>
+                                    <color key="baseForegroundColor" name="YaziRenk2"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonToSummary:" destination="Rxx-Tk-8Hw" eventType="touchUpInside" id="f1V-LJ-YU6"/>
+                                    <action selector="butttonSearchP:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PKn-Zs-ntu"/>
+                                    <action selector="playerSearch:" destination="z2f-SI-Xh3" eventType="touchUpInside" id="gV6-0U-ins"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nickname" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9S6-d5-4YU">
+                                <rect key="frame" x="20" y="103" width="374" height="45"/>
+                                <color key="backgroundColor" name="ButtonBgT"/>
+                                <color key="tintColor" name="YaziRenk2"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="NTN-EE-lZN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="24"/>
+                                <color key="textColor" name="YaziRenk2"/>
+                                <color key="highlightedColor" name="ButtonBgT"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="59E-rU-909"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bVn-fD-zff" firstAttribute="top" secondItem="6BN-3r-Q74" secondAttribute="topMargin" constant="-99" id="255-BL-4KQ"/>
+                            <constraint firstItem="9S6-d5-4YU" firstAttribute="top" secondItem="59E-rU-909" secondAttribute="top" constant="15" id="AOA-zc-auX"/>
+                            <constraint firstAttribute="bottom" secondItem="bVn-fD-zff" secondAttribute="bottom" id="Cj8-yr-prH"/>
+                            <constraint firstItem="59E-rU-909" firstAttribute="trailing" secondItem="9S6-d5-4YU" secondAttribute="trailing" constant="20" id="G4i-Be-wS0"/>
+                            <constraint firstItem="9S6-d5-4YU" firstAttribute="leading" secondItem="59E-rU-909" secondAttribute="leading" constant="20" id="JQl-H8-WwR"/>
+                            <constraint firstItem="9S6-d5-4YU" firstAttribute="centerX" secondItem="bVn-fD-zff" secondAttribute="centerX" id="NVC-Rg-0pl"/>
+                            <constraint firstItem="bVn-fD-zff" firstAttribute="leading" secondItem="6BN-3r-Q74" secondAttribute="leading" id="bpT-RQ-oXS"/>
+                            <constraint firstItem="9S6-d5-4YU" firstAttribute="centerX" secondItem="6BN-3r-Q74" secondAttribute="centerX" id="uw2-fO-ROA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="iDG-hP-EVP"/>
+                    <connections>
+                        <outlet property="labelNick" destination="9S6-d5-4YU" id="HIR-ql-lJQ"/>
+                        <segue destination="Ftf-vC-aLq" kind="show" identifier="toOzetPop" id="j71-Mu-feF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d2f-AH-oye" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2640.579710144928" y="-210.26785714285714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Q04-XH-qCs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jHw-9l-Bls" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QqC-hb-ZdJ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="USA-mI-8jk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yoe-1t-h0U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="zDr-F9-E8g"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="Mainbackground" width="2808" height="1332"/>
+        <image name="clanScreen" width="1280" height="720"/>
+        <image name="ozetScreen" width="1500" height="1500"/>
+        <image name="playerScreen" width="295" height="512"/>
+        <image name="rankingScreen" width="364" height="364"/>
+        <namedColor name="ButtonBgT">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="YaziRenk2">
+            <color red="0.98099994659423828" green="0.95899999141693115" blue="0.9869999885559082" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
